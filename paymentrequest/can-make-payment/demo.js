@@ -56,11 +56,8 @@ function initPaymentRequest(onSuccess, onFailure) {
           'stripe:version': '2016-07-06',
         },
       },
-    },
   }, {
-    supportedMethods: networks,
-  }, {
-    supportedMethods: ['basic-card'],
+    supportedMethods: 'basic-card',
     data: {supportedNetworks: networks, supportedTypes: types},
   }];
 
